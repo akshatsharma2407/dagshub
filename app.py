@@ -10,6 +10,10 @@ import mlflow
 import mlflow.sklearn
 import dagshub
 
+dagshub.init(repo_owner='akshatsharma2407', repo_name='dagshub', mlflow=True)
+
+mlflow.set_tracking_uri('https://dagshub.com/akshatsharma2407/dagshub.mlflow')
+
 data = load_diabetes()
 
 x = data.data
