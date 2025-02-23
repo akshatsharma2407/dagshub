@@ -8,6 +8,7 @@ import seaborn as sns
 import matplotlib.pyplot as plt
 import mlflow
 import mlflow.sklearn
+import dagshub
 
 data = load_diabetes()
 
@@ -38,6 +39,8 @@ plt.xlabel('Predicted')
 plt.title('Confusion matrix')
 
 plt.savefig('matrix.png')
+
+mlflow.set_experiment('demo')
 
 with mlflow.start_run():
 
