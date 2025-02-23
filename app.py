@@ -44,7 +44,7 @@ plt.title('Confusion matrix')
 
 plt.savefig('matrix.png')
 
-mlflow.set_experiment('demo')
+mlflow.set_experiment('demo1')
 
 with mlflow.start_run():
 
