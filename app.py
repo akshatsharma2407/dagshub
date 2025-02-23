@@ -36,7 +36,7 @@ matrix = confusion_matrix(ytest,ypred)
 
 plt.figure(figsize=(5,5))
 
-sns.heatmap(matrix,annot=True,fmt='d',cmap='Blues',xticklabels=data.target_names,yticklabels=data.target_names)
+sns.heatmap(matrix,annot=True,fmt='d',cmap='Blues')
 
 plt.ylabel('Actual')
 plt.xlabel('Predicted')
